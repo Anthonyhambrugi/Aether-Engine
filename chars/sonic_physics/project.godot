@@ -1,0 +1,15 @@
+config_version=5
+
+[application]
+config/name="Sonic Physics"
+run/main_scene="res://demo/demo.tscn"
+
+[display]
+window/size/viewport_width=320
+window/size/viewport_height=224
+window/size/window_width_override=960
+window/size/window_height_override=672
+window/stretch/mode="viewport"
+
+[physics]
+common/physics_ticks_per_second=60

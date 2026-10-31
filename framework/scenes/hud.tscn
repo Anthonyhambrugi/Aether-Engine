@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://harmony/harmony_hud.gd" id="1_hud"]
+[ext_resource type="Script" path="res://harmony/harmony_profile.gd" id="5_profcls"]
+[ext_resource type="Resource" path="res://profiles/sonic.tres" id="2_sonic"]
+[ext_resource type="Resource" path="res://profiles/tails.tres" id="3_tails"]
+[ext_resource type="Resource" path="res://profiles/knuckles.tres" id="4_knux"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+profiles = Array[ExtResource("5_profcls")]([ExtResource("2_sonic"), ExtResource("3_tails"), ExtResource("4_knux")])
+
+[node name="Label" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 760.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 16
+text = "Harmony"

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://harmony/harmony_body.gd" id="1_body"]
+[ext_resource type="Script" path="res://harmony/harmony_placeholder.gd" id="2_ph"]
+[ext_resource type="Resource" path="res://profiles/sonic.tres" id="3_prof"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hit"]
+size = Vector2(14, 30)
+
+[node name="Player" type="Node2D" groups=["harmony_player"]]
+script = ExtResource("1_body")
+profile = ExtResource("3_prof")
+
+[node name="Placeholder" type="Node2D" parent="."]
+script = ExtResource("2_ph")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 128
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("RectangleShape2D_hit")

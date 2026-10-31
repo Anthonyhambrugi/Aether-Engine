@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="HarmonyProfile" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://harmony/harmony_profile.gd" id="1_prof"]
+[ext_resource type="Script" path="res://harmony/abilities/harmony_ability_spindash.gd" id="2_spin"]
+[ext_resource type="Script" path="res://harmony/abilities/harmony_ability_peelout.gd" id="3_peel"]
+[ext_resource type="Script" path="res://harmony/abilities/harmony_ability_speed_shoes.gd" id="4_shoes"]
+
+[resource]
+script = ExtResource("1_prof")
+ability_scripts = Array[Script]([ExtResource("2_spin"), ExtResource("3_peel"), ExtResource("4_shoes")])

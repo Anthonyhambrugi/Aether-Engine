@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="HarmonyProfile" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://harmony/harmony_profile.gd" id="1_prof"]
+[ext_resource type="Script" path="res://harmony/abilities/harmony_ability_spindash.gd" id="2_spin"]
+[ext_resource type="Script" path="res://harmony/abilities/harmony_ability_double_jump.gd" id="3_dj"]
+
+[resource]
+script = ExtResource("1_prof")
+height_radius = 15.0
+ability_scripts = Array[Script]([ExtResource("2_spin"), ExtResource("3_dj")])

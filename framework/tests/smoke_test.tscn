@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://tests/smoke_test.gd" id="1_test"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="2_player"]
+
+[node name="SmokeTest" type="Node2D"]
+script = ExtResource("1_test")
+
+[node name="Ground" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="Ground"]
+polygon = PackedVector2Array(-400, 300, 200, 300, 460, 140, 20000, 140, 20000, 340, -400, 340)
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector2(0, 200)

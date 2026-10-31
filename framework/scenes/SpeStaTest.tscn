@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dooj38emiotss"]
+
+[ext_resource type="Script" uid="uid://bckp2e57wgeqi" path="res://framework/harmony/harmony_camera.gd" id="4_bbjye"]
+
+[node name="SpeStaTest" type="Node2D" unique_id=1082787737]
+
+[node name="HarmonyCamera2D2" type="Camera2D" parent="." unique_id=973930076]
+zoom = Vector2(2, 2)
+script = ExtResource("4_bbjye")
+metadata/_custom_type_script = "uid://bckp2e57wgeqi"
